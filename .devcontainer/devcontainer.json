@@ -2,5 +2,12 @@
   "name": "Oracle Linux 9 PHP & MySQL Stack",
   "build": {
     "dockerfile": "Dockerfile"
-  }
+  },
+  "forwardPorts": [80],
+  "portsAttributes": {
+    "80": {
+      "label": "Web Server"
+    }
+  },
+  "postStartCommand": ".devcontainer/postStartCommand.sh"
 }

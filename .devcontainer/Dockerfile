@@ -3,6 +3,7 @@ FROM oraclelinux:9
 
 # インストール（分割して実行することで負荷を抑える）
 RUN dnf -y install git git-lfs sudo tar wget && \
+    dnf -y install httpd && \
     dnf clean all
 
 # ユーザーの作成と sudo 権限の付与

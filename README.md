@@ -43,3 +43,15 @@
      ```
 
 
+2. Apache HTTP Serverをインストール
+   - 変更するファイル
+     ```text
+      ・devcontainer
+         +-- Dockerfile・・・・・・・・インストールを追記
+         +-- devcontainer.json・・・・ポートフォワードと外部スクリプトファイルを追記
+         +-- postStartCommand.sh・・・httpdの起動
+     ```
+     `＄ sudo chmod 755 .devcontainer/postStartCommand.sh` <span style="color: red;">↩︎</span>
+   - リビルド
+   - 動作確認
+     1. ポートタブの転送されたアドレスの地球儀アイコンをクリック
