@@ -90,5 +90,22 @@
       1. ターミナルで
 　    「"$BROWSER" http://localhost/sample01/index.php」
 　      コマンドを実行
-      2. トップページが表示される場合は、URLの最後に
+      2. トップページが表示されない場合は、URLの最後に
 　       「/sample01/index.php」とEnterキーを入力
+
+
+4. MySQLデータベースとphpMyAdminをインストール
+   - 変更するファイル
+      ```text
+      ・devcontainer
+         +-- Dockerfile・・・・・・・インストールを追記
+         +-- devcontainer.json・・・ポートフォワード
+   - リビルド
+   - 動作確認
+     1. ターミナルで
+　      「"$BROWSER" http://localhost/phpMyAdmin」
+　      コマンドを実行
+     2. トップページが表示されない場合は、
+　       URLの最後に「/phpMyAdmin」とEnterキーを入力
+     3. ユーザ名のテキストボックスに「root」を入力
+     4. 「ログイン」ボタンをクリック
