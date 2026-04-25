@@ -1,0 +1,6 @@
+{
+  "name": "Oracle Linux 9 PHP & MySQL Stack",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
